@@ -37,4 +37,4 @@ app.use("/files", express.static(path.resolve(__dirname, "..", "tmp")));
 //pega arquivo de rotas
 app.use(require('./route'));
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
